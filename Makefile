@@ -1,3 +1,6 @@
+deps:
+	nuget restore
+
 build pong/obj/Debug/pong.exe pong.Tests/obj/Debug/pong.Tests.dll:
 	xbuild /nologo /v:q /property:GenerateFullPaths=true pong.sln
 
@@ -10,4 +13,4 @@ test: pong.Tests/obj/Debug/pong.Tests.dll
 clean:
 	rm -rf pong/obj pong/bin pong.Tests/obj pong.Tests/bin
 
-.PHONY: clean run build test
+.PHONY: clean run build test deps
