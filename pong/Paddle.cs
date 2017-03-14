@@ -3,7 +3,7 @@ using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 
-public class Paddle : UserControl, GameObject
+public class Paddle : GameObject
 {
 
     public int X, Y;
@@ -13,7 +13,6 @@ public class Paddle : UserControl, GameObject
     {
         X = startX;
         Y = startY;
-        this.Cursor = new Cursor(Cursor.Current.Handle);
 
         try
         {
