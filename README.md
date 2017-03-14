@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ZEChnology/ec_pong.svg?branch=master)](https://travis-ci.org/ZEChnology/ec_pong)
+
 # ec_pong
 Eric's junky C# pong clone.
 
